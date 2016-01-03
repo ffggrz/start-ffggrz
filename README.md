@@ -29,6 +29,10 @@ cd /var/www/
 git clone https://github.com/ffggrz/start-ffggrz.git
 ```
 
+## Update
+
+The content is updated automatically from the server every 30 minutes.
+
 ## License
 
 https://creativecommons.org/licenses/by-sa/4.0/
