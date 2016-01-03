@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="author" content="anoymouserver" />
+
+		<title>start - ffggrz</title>
+
+		<link href="//res.ffggrz/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="//res.ffggrz/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="./_res/main.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+						<span class="sr-only">Menü</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>-->
+					<a class="navbar-brand" href="./"><span>Freifunk Gera-Greiz - start.ffggrz</span></a>
+				</div>
+			</div>
+		</nav>
+
+		<main class="container">
+			<div class="col-md-9 col-sm-8" style="padding: 0;">
+				<div class="row entrys" id="services">
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4 side-bar">
+				<div class="panel panel-default">
+					<div class="panel-heading"><i class="fa fa-fw fa-bar-chart"></i> aktuelle Statistik</div>
+					<div class="panel-body" id="stats">
+						<table class="table-condensed" style="width:100%">
+							<tr><td>Nodes (gesamt):</td><td id="nodes-total" class="text-right">-</td></tr>
+							<tr><td>Nodes (online):</td><td id="nodes-online" class="text-right">-</td></tr>
+							<tr><td>Benutzer:</td><td id="users-online" class="text-right">-</td></tr>
+						</table>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading"><i class="fa fa-fw fa-rss"></i> Community Feed</div>
+					<div class="panel-body scroll-box" id="feed">
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="container" id="footerLinks">
+				<a class="footer-text pull-right" id="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="vertical-align: text-top;" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+			</div>
+		</footer>
+
+		<script src="//res.ffggrz/js/jquery.min.js"></script>
+		<script src="//res.ffggrz/js/bootstrap.min.js"></script>
+		<script src="./_res/FeedEk.js"></script>
+		<script src="./_res/main.js"></script>
+	</body>
+</html>

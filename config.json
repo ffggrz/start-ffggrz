@@ -1,0 +1,73 @@
+{
+	"services": [
+		{
+			"name": "Verbindung",
+			"url": "http://nextnode.ffggrz/",
+			"comment": "Statusseite des Knotens, mit welchem du gerade verbunden bist",
+			"symbol": "wifi",
+			"public": false
+		},
+		{
+			"name": "Karte",
+			"url": "http://map.ffggrz/",
+			"comment": "Übersichtskarte unserer Nodes und des Meshs",
+			"symbol": "map",
+			"public": false
+		},
+		{
+			"name": "Mumble",
+			"url": "http://mumble.ffggrz/",
+			"comment": "Ein Mumble Server für Sprachkonferenzen",
+			"symbol": "comments",
+			"public": false
+		},
+		{
+			"name": "Verbindungsinfos",
+			"url": "http://test.ffggrz/",
+			"comment": "Informationen zu deiner aktuellen Verbindung",
+			"symbol": "hourglass-o",
+			"public": false
+		},
+		{
+			"name": "Liste",
+			"url": "http://list.ffggrz/",
+			"comment": "Detail-Liste unserer Nodes",
+			"symbol": "list",
+			"public": false
+		},
+		{
+			"name": "Firmware",
+			"url": "http://media.ffggrz/firmware/",
+			"comment": "interner Firmware-Mirror",
+			"symbol": "file-archive-o",
+			"public": false
+		}
+	],
+	"sidebar": {
+		"stats": {
+			"url": "http://map.ffggrz/data.php/nodes.json",
+			"updateInterval": 30
+		},
+		"feed": {
+			"url": "https://freifunk-gera-greiz.de/c/blogs_aggregator/rss?p_l_id=17410&organizationId=22440&displayStyle=abstract&type=rss&version=2.0&displayStyle=abstract&type=rss&version=2.0",
+			"maxCount": 4
+		}
+	},
+	"footer": [
+		{
+			"name": "Home",
+			"url": "https://www.freifunk-gera-greiz.de/",
+			"symbol": "home"
+		},
+		{
+			"name": "Twitter",
+			"url": "https://www.twitter.com/ffggrz",
+			"symbol": "twitter"
+		},
+		{
+			"name": "Github",
+			"url": "https://www.github.com/ffggrz",
+			"symbol": "github"
+		}
+	]
+}
