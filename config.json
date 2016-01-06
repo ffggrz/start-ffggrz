@@ -36,6 +36,13 @@
 			"public": false
 		},
 		{
+			"name": "Statistiken",
+			"url": "http://grafana.ffggrz/dashboard/db/startseite/",
+			"comment": "Statistiken über das Freifunk-Netz",
+			"symbol": "area-chart",
+			"public": false
+		},
+		{
 			"name": "Firmware",
 			"url": "http://media.ffggrz/firmware/",
 			"comment": "interner Firmware-Mirror",
