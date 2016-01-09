@@ -55,6 +55,13 @@
 			"comment": "interner Firmware-Mirror",
 			"symbol": "file-archive-o",
 			"public": false
+		},
+		{
+			"name": "E-Mail",
+			"url": "https://mail.ffggrz.de/",
+			"comment": "E-Mail Server",
+			"symbol": "envelope-o",
+			"public": true
 		}
 	],
 	"sidebar": {
