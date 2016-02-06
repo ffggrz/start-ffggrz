@@ -2,7 +2,7 @@
 
 ## Add a service
 
-The list of all services is located at `config.json`. You can use this file to sort the services and add new ones.
+The list of all services is located at `services.json`. You can use this file to sort the services and add new ones.
 
 ### Syntax
 
@@ -22,11 +22,15 @@ The list of all services is located at `config.json`. You can use this file to s
 - `symbol`: *(string)* symbol (pick from [here](https://fortawesome.github.io/Font-Awesome/icons/), the `fa-` will be added automatically)
 - `public`: *(bool)* whether the link is public or from the internal network
 
+## Change configuration
+
+The other configurations are located at `config.json`.
+
 ## Deploy
 
 ```sh
 cd /var/www/
-git clone https://github.com/ffggrz/start-ffggrz.git
+git clone https://github.com/ffggrz/start-ffggrz.git start.ffggrz.de
 ```
 
 ## Update

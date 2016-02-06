@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Verbindung",
+        "url": "http://nextnode.ffggrz/",
+        "comment": "Statusseite des Knotens, mit welchem du gerade verbunden bist",
+        "symbol": "wifi",
+        "public": false
+    },
+    {
+        "name": "Karte",
+        "url": "http://map.ffggrz/",
+        "comment": "Übersichtskarte unserer Nodes und des Meshs",
+        "symbol": "map",
+        "public": false
+    },
+    {
+        "name": "Mumble",
+        "url": "http://mumble.ffggrz/",
+        "comment": "Ein Mumble Server für Sprachkonferenzen",
+        "symbol": "comments",
+        "public": false
+    },
+    {
+        "name": "Etherpad",
+        "url": "http://write.ffggrz/",
+        "comment": "Online Texteditor zum einfachen gemeinsamen Arbeiten an Texten",
+        "symbol": "file-text",
+        "public": false
+    },
+    {
+        "name": "Verbindungsinfos",
+        "url": "http://test.ffggrz/",
+        "comment": "Informationen zu deiner aktuellen Verbindung",
+        "symbol": "hourglass-o",
+        "public": false
+    },
+    {
+        "name": "Liste",
+        "url": "http://list.ffggrz/",
+        "comment": "Detail-Liste unserer Nodes",
+        "symbol": "list",
+        "public": false
+    },
+    {
+        "name": "Statistiken",
+        "url": "http://grafana.ffggrz/dashboard/db/startseite/",
+        "comment": "Statistiken über das Freifunk-Netz",
+        "symbol": "area-chart",
+        "public": false
+    },
+    {
+        "name": "Firmware",
+        "url": "http://media.ffggrz/firmware/",
+        "comment": "interner Firmware-Mirror",
+        "symbol": "file-archive-o",
+        "public": false
+    },
+    {
+        "name": "E-Mail",
+        "url": "https://mail.ffggrz.de/",
+        "comment": "E-Mail Server",
+        "symbol": "envelope-o",
+        "public": true
+    }
+]
