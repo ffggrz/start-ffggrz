@@ -1,13 +1,6 @@
-html {
-	position: relative;
-	min-height: 100%;
-}
-
-body {margin-bottom: 30px;}
-
 main.container {padding-top: 10px;}
 
-.entrys {padding: 0 20px;}
+.entrys {padding: 0 10px;}
 .entrys>.entry {margin-bottom: 20px; min-height: 85px;}
 
 .entrys>.entry h3 {margin-top: 0; margin-bottom: 5px;}
