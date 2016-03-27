@@ -181,9 +181,16 @@ app.sidebar.stats = {
 app.sidebar.status = {
     init: function(item) {
         var target = "#"+item.type+" .panel-body";
-        $(target).empty();
-        var html = "<small class='center-block'>"+item.data.url+"</small>"
-        $(html).appendTo(target);
+        
+        $.post("./_res/cgi/proxy.php", {url: ""+item.data.url+""})
+        .done(function(data) {
+            $(target).empty();
+            var html = "<small class='center-block'>" + data + "</small>";
+            $(html).appendTo(target);
+        })
+        .fail(function (j, s, e) {
+            console.log('Request failed ('+item.type+'): ' + s + ', ' + e)
+        });
     }
 }
 

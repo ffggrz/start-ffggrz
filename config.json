@@ -15,6 +15,15 @@
             }
         },
         {
+            "name": "Status",
+            "symbol": "tasks",
+            "type": "status",
+            "scrollBox": false,
+            "data": {
+                "url": "http://res.ffggrz.de/cgi/network-status.php"
+            }
+        },
+        {
             "name": "Community Feed",
             "symbol": "rss",
             "type": "feed",
