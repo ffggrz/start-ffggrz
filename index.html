@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="de">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="author" content="anoymouserver" />
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="author" content="anoymouserver" />
 
-		<title>start - ffggrz</title>
+        <title>Freifunk Startseite</title>
 
-		<link rel="shortcut icon" type="image/x-icon" href="/.res/img/favicon.ico" />
-		<link href="./_res/css/bootstrap.min.css" rel="stylesheet" />
-		<link href="./_res/css/font-awesome.min.css" rel="stylesheet" />
-		<link href="./_res/css/main.css" rel="stylesheet" />
-	</head>
+        <link rel="shortcut icon" type="image/x-icon" href="/.res/img/favicon.ico" />
+        <link href="./_res/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="./_res/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="./_res/css/main.css" rel="stylesheet" />
+    </head>
 
-	<body>
+    <body>
 
-		<nav class="navbar navbar-default navbar-static-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-					<span class="navbar-brand">Freifunk Gera-Greiz</span>
-				</div>
+                    <span class="navbar-brand" id="pagetitle">Freifunk Startseite</span>
+                </div>
                 <div class="collapse navbar-collapse" id="menu">
                     <ul class="nav navbar-nav navbar-left">
                         <li class="active"><a href="./">Start</a></li>
@@ -40,10 +40,12 @@
                         <li><a id="license" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="vertical-align: text-top;" src="https://licensebuttons.net/l/by-sa/4.0/80x15.png" /></a></li>
                     </ul>
                 </div>
-			</div>
-		</nav>
+            </div>
+        </nav>
 
-		<main class="container">
+        <main class="container">
+            <span id="noscript"><p class="alert alert-danger">Um diese Seite in vollem Umfang nutzen zu können, bitte Javascript aktivieren!</p></span>
+            <script>document.getElementById("noscript").remove();</script>
             <div class="row">
                 <div class="col-md-9 col-sm-8">
                     <div class="row entrys" id="services">
@@ -52,10 +54,10 @@
                 <div class="col-md-3 col-sm-4" id="sidebar">
                 </div>
             </div>
-		</main>
+        </main>
 
-		<script src="./_res/js/jquery.min.js"></script>
-		<script src="./_res/js/bootstrap.min.js"></script>
-		<script src="./_res/js/main.js"></script>
-	</body>
+        <script src="./_res/js/jquery.min.js"></script>
+        <script src="./_res/js/bootstrap.min.js"></script>
+        <script src="./_res/js/main.js"></script>
+    </body>
 </html>

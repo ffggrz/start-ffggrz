@@ -2,7 +2,7 @@
 // |  File: main.js    UTF-8
 // |  Author: anoymouserver
 // |  Status:
-// |  Revision: 2016/01/30
+// |  Revision: 2016/04/02
 // +---------------------------------------------------------------------------
 
 'use strict';
@@ -27,16 +27,25 @@ $(document).ready(function () {
     app.config.get();
 })
 .on("config_loaded", function () {
+    document.title = app.config.data.page.title;
+    $("#pagetitle").text(app.config.data.page.title);
     app.services.init();
     app.menu.init();
-	app.community.init();
+    app.community.init();
     app.sidebar.init();
 });
 
 app.services = {
-	target: '#services',
+    target: '#services',
+    isInternal: false,
 
     init: function() {
+        if (app.config.data.page.domains)
+          if (window.location.host == app.config.data.page.domains.internal)
+              app.services.isInternal = true;
+          else if (window.location.host != app.config.data.page.domains.external)
+              console.log("Site loaded from wrong domain! " + window.location.host + " vs. (" + app.config.data.page.domains.external + "|" + app.config.data.page.domains.internal + ")");
+
         $.getJSON(app.config.data.services.url, function (data) {
             var count = 0;
             $(app.services.target).empty();
@@ -50,18 +59,34 @@ app.services = {
             console.log('Request failed (services): ' + s + ', ' + e)
         });
     },
-    
+
+
     createItem: function(data) {
+        var url;
+        if (typeof data.url === 'object') {     // if external and/or internal links then
+            if (app.services.isInternal) {      // if site is loaded internaly
+                if (data.url.internal)          // and interal site is exists
+                    url = data.url.internal;    // use internal URL
+                else
+                    url = data.url.external;    // else use external URL
+            } else {                            // if site is loaded externaly
+                if (data.url.external)          // if external site exist then use it
+                    url = data.url.external;
+            }
+        }
+        else                                    // else if url has only old-style strukt
+            url = data.url;
+
         var out = "\
-        <div class='col-sm-6 col-xs-12 entry'>\
+        <div class='col-sm-6 col-xs-12 entry" + (typeof url !== 'undefined' ? "" : " text-muted") + "'>\
             <div class='media'>\
                 <div class='media-left'>\
                     <i class='fa fa-fw fa-2x fa-"+data.symbol+"'></i>\
                 </div>\
                 <div class='media-body'>\
-                    <a href='"+data.url+"' target='_blank' class='text-primary'>\
-                        <h3 class='media-heading'>"+data.name+((data.public)?" <small class='fa fa-external-link'></small>":"")+"</h3>\
-                    </a>\
+                    " + (typeof url !== 'undefined' ? "<a href='"+url+"' target='_blank' class='text-primary'>" : "<span>") + "\
+                        <h3 class='media-heading'>" + data.name + (data.public ? " <small class='fa fa-external-link'></small>" : "") + "</h3>\
+                    " + (typeof url !== 'undefined' ? "</a>" : "</span>") + "\
                     <span>"+data.comment+"</span>\
                 </div>\
             </div>\

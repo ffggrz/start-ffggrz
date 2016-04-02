@@ -1,4 +1,11 @@
 {
+    "page": {
+        "title": "Freifunk Gera-Greiz",
+        "domains": {
+            "external": "start.ffggrz.de",
+            "internal": "start.ffggrz"
+        }
+    },
     "services": {
         "url": "./services.json"
     },
