@@ -8,16 +8,20 @@ The list of all services is located at `services.json`. You can use this file to
 
 ```json
 {
-	"name": "Example",
-	"url": "http://example.com/",
-	"comment": "Example-Link",
-	"symbol": "map-pin",
-	"public": true
+    "name": "Example",
+    "url": {
+        "external": "http://example.com/"
+    },
+    "comment": "Example-Link",
+    "symbol": "map-pin",
+    "public": true
 }
 ```
 
 - `name`: *(string)* displayname of the service
-- `url`: *(string)* url of the service
+- `url`: *(object)* urls of the service
+  - `internal`: *(string)* internal service url
+  - `external`: *(string)* external service url
 - `comment`: *(string)* comment
 - `symbol`: *(string)* symbol (pick from [here](https://fortawesome.github.io/Font-Awesome/icons/), the `fa-` will be added automatically)
 - `public`: *(bool)* whether the link is public or from the internal network
