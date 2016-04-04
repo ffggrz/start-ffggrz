@@ -5,8 +5,7 @@
             "internal": "http://nextnode.ffggrz/"
         },
         "comment": "Statusseite des Knotens, mit welchem du gerade verbunden bist",
-        "symbol": "wifi",
-        "public": false
+        "symbol": "wifi"
     },
     {
         "name": "Karte",
@@ -15,8 +14,7 @@
             "external": "http://map.ffggrz.de/"
         },
         "comment": "Übersichtskarte unserer Nodes und des Meshs",
-        "symbol": "map",
-        "public": false
+        "symbol": "map"
     },
     {
         "name": "Mumble",
@@ -25,8 +23,7 @@
             "external": "http://mumble.ffggrz.de/"
         },
         "comment": "Ein Mumble Server für Sprachkonferenzen",
-        "symbol": "comments",
-        "public": false
+        "symbol": "comments"
     },
     {
         "name": "Etherpad",
@@ -35,8 +32,7 @@
             "external": "http://write.ffggrz.de/"
         },
         "comment": "Online Texteditor zum einfachen gemeinsamen Arbeiten an Texten",
-        "symbol": "file-text",
-        "public": false
+        "symbol": "file-text"
     },
     {
         "name": "Verbindungsinfos",
@@ -44,8 +40,7 @@
             "internal": "http://test.ffggrz/"
         },
         "comment": "Informationen zu deiner aktuellen Verbindung",
-        "symbol": "hourglass-o",
-        "public": false
+        "symbol": "hourglass-o"
     },
     {
         "name": "Liste",
@@ -54,8 +49,7 @@
             "external": "http://list.ffggrz.de/"
         },
         "comment": "Detail-Liste unserer Nodes",
-        "symbol": "list",
-        "public": false
+        "symbol": "list"
     },
     {
         "name": "Statistiken",
@@ -64,8 +58,7 @@
             "external": "http://grafana.ffggrz.de/dashboard/db/startseite/"
         },
         "comment": "Statistiken über das Freifunk-Netz",
-        "symbol": "area-chart",
-        "public": false
+        "symbol": "area-chart"
     },
     {
         "name": "Firmware",
@@ -74,8 +67,7 @@
             "external": "http://media.ffggrz.de/firmware/"
         },
         "comment": "interner Firmware-Mirror",
-        "symbol": "file-archive-o",
-        "public": false
+        "symbol": "file-archive-o"
     },
     {
         "name": "E-Mail",
@@ -83,7 +75,6 @@
             "external": "https://mail.ffggrz.de/"
         },
         "comment": "E-Mail Server",
-        "symbol": "envelope-o",
-        "public": true
+        "symbol": "envelope-o"
     }
 ]

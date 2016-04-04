@@ -65,13 +65,18 @@ app.services = {
         var url;
         if (typeof data.url === 'object') {     // if external and/or internal links then
             if (app.services.isInternal) {      // if site is loaded internaly
-                if (data.url.internal)          // and interal site is exists
+                if (data.url.internal) {        // and interal site is exists
                     url = data.url.internal;    // use internal URL
-                else
+                    data.public = false;
+                } else {
                     url = data.url.external;    // else use external URL
+                    data.public = true;
+                }
             } else {                            // if site is loaded externaly
-                if (data.url.external)          // if external site exist then use it
+                if (data.url.external) {        // if external site exist then use it
                     url = data.url.external;
+                    data.public = true;
+                }
             }
         }
         else                                    // else if url has only old-style strukt

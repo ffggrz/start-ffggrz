@@ -13,8 +13,7 @@ The list of all services is located at `services.json`. You can use this file to
         "external": "http://example.com/"
     },
     "comment": "Example-Link",
-    "symbol": "map-pin",
-    "public": true
+    "symbol": "map-pin"
 }
 ```
 
@@ -24,7 +23,6 @@ The list of all services is located at `services.json`. You can use this file to
   - `external`: *(string)* external service url
 - `comment`: *(string)* comment
 - `symbol`: *(string)* symbol (pick from [here](https://fortawesome.github.io/Font-Awesome/icons/), the `fa-` will be added automatically)
-- `public`: *(bool)* whether the link is public or from the internal network
 
 ## Change configuration
 
