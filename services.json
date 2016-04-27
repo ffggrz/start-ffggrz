@@ -63,8 +63,8 @@
     {
         "name": "Firmware",
         "url": {
-            "internal": "http://media.ffggrz/firmware/",
-            "external": "http://media.ffggrz.de/firmware/"
+            "internal": "http://gluon.ffggrz/firmware/",
+            "external": "http://gluon.ffggrz.de/firmware/"
         },
         "comment": "interner Firmware-Mirror",
         "symbol": "file-archive-o"
