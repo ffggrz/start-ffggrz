@@ -1,5 +1,7 @@
 # start.ffggrz
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 ## Add a service
 
 The list of all services is located at `services.json`. You can use this file to sort the services and add new ones.
