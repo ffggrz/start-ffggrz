@@ -53,6 +53,11 @@
             "symbol": "twitter"
         },
         {
+           "name": "Facebook",
+           "url": "https://www.facebook.com/ffggrz",
+           "symbol": "facebook"
+        },
+        {
             "name": "Github",
             "url": "https://www.github.com/ffggrz",
             "symbol": "github"
