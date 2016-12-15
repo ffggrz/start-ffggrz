@@ -11,7 +11,7 @@
         "name": "Karte",
         "url": {
             "internal": "http://map.ffggrz/",
-            "external": "http://map.ffggrz.de/"
+            "external": "https://map.ffggrz.de/"
         },
         "comment": "Übersichtskarte unserer Nodes und des Meshs",
         "symbol": "map"
@@ -20,7 +20,7 @@
         "name": "Mumble",
         "url": {
             "internal": "http://mumble.ffggrz/",
-            "external": "http://mumble.ffggrz.de/"
+            "external": "https://mumble.ffggrz.de/"
         },
         "comment": "Ein Mumble Server für Sprachkonferenzen",
         "symbol": "comments"
@@ -29,7 +29,7 @@
         "name": "Etherpad",
         "url": {
             "internal": "http://write.ffggrz/",
-            "external": "http://write.ffggrz.de/"
+            "external": "https://write.ffggrz.de/"
         },
         "comment": "Online Texteditor zum einfachen gemeinsamen Arbeiten an Texten",
         "symbol": "file-text"
@@ -46,7 +46,7 @@
         "name": "Liste",
         "url": {
             "internal": "http://list.ffggrz/",
-            "external": "http://list.ffggrz.de/"
+            "external": "https://list.ffggrz.de/"
         },
         "comment": "Detail-Liste unserer Nodes",
         "symbol": "list"
@@ -54,8 +54,8 @@
     {
         "name": "Statistiken",
         "url": {
-            "internal": "http://grafana.ffggrz/dashboard/db/startseite/",
-            "external": "http://grafana.ffggrz.de/dashboard/db/startseite/"
+            "internal": "http://grafana.ffggrz/",
+            "external": "https://grafana.ffggrz.de/"
         },
         "comment": "Statistiken über das Freifunk-Netz",
         "symbol": "area-chart"
@@ -64,7 +64,7 @@
         "name": "Firmware",
         "url": {
             "internal": "http://gluon.ffggrz/firmware/",
-            "external": "http://gluon.ffggrz.de/firmware/"
+            "external": "https://gluon.ffggrz.de/firmware/"
         },
         "comment": "interner Firmware-Mirror",
         "symbol": "file-archive-o"
