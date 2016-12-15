@@ -17,17 +17,8 @@
             "type": "stats",
             "scrollBox": false,
             "data": {
-                "url": "http://map.ffggrz.de/data/nodes.json",
+                "url": "https://map.ffggrz.de/data/nodes.json",
                 "updateInterval": 30
-            }
-        },
-        {
-            "name": "Status",
-            "symbol": "tasks",
-            "type": "status",
-            "scrollBox": false,
-            "data": {
-                "url": "http://res.ffggrz.de/cgi/network-status.php"
             }
         },
         {
@@ -36,7 +27,7 @@
             "type": "feed",
             "scrollBox": true,
             "data": {
-                "url": "https://www.freifunk-gera-greiz.de/c/blogs_aggregator/rss?p_l_id=17410&organizationId=22440&displayStyle=abstract&type=rss&version=2.0&displayStyle=abstract&type=rss&version=2.0",
+                "url": "https://www.freifunk-gera-greiz.de/c/blogs_aggregator/rss?organizationId=22440&displayStyle=abstract&type=rss&version=2.0",
                 "maxCount": 4
             }
         }
