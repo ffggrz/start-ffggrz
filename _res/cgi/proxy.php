@@ -44,5 +44,3 @@ else
   $errortext = "<form method=\"GET\" action=\"\"><input required=\"required\" name=\"url\" type=\"url\" /><input type=\"submit\" value=\"Open\" /></form>";
   die($errortext);
 }
-
-?>

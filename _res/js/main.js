@@ -179,7 +179,8 @@ app.sidebar.stats = {
           if (typeof (previousValue) !== 'number') {
             previousValue = 0
           }
-          return previousValue + currentValue.statistics.clients
+          var clients = (isNaN(currentValue.statistics.clients)) ? 0 : currentValue.statistics.clients
+          return previousValue + clients
         })
 
         if (app.sidebar.stats.data !== statsTmp) {
