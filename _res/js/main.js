@@ -91,7 +91,7 @@ app.services = {
       '        </div>\n' +
       '        <div class="media-body">\n' +
 
-      '            ' + (typeof url !== 'undefined' ? '<a href="' + url + '" target="_blank" class="text-primary">' : '<span>') + '\n' +
+      '            ' + (typeof url !== 'undefined' ? '<a href="' + url + '" target="_blank" rel="noopener noreferrer" class="text-primary">' : '<span>') + '\n' +
       '                <h3 class="media-heading">' + data.name + (data.public ? ' <small class="fa fa-external-link"></small>' : '') + '</h3>\n' +
       '            ' + (typeof url !== 'undefined' ? '</a>' : '</span>') + '\n' +
       '            <span>' + data.comment + '</span>\n' +

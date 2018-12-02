@@ -28,8 +28,8 @@
     {
         "name": "Etherpad",
         "url": {
-            "internal": "http://write.ffggrz/",
-            "external": "https://write.ffggrz.de/"
+            "internal": "http://pad.ffggrz/",
+            "external": "https://pad.ffggrz.de/"
         },
         "comment": "Online Texteditor zum einfachen gemeinsamen Arbeiten an Texten",
         "symbol": "file-text"
@@ -41,15 +41,6 @@
         },
         "comment": "Informationen zu deiner aktuellen Verbindung",
         "symbol": "hourglass-o"
-    },
-    {
-        "name": "Liste",
-        "url": {
-            "internal": "http://list.ffggrz/",
-            "external": "https://list.ffggrz.de/"
-        },
-        "comment": "Detail-Liste unserer Nodes",
-        "symbol": "list"
     },
     {
         "name": "Statistiken",
